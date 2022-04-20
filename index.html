@@ -4,212 +4,22 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Airbnb Clone</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Title -->
+
+        <!-- Tailwind CSS CDN -->
     </head>
     <body>
-        <nav class="flex items-center justify-between sticky top-0 z-50 shadow-md bg-white p-5 md:px-10">
-            <div class="flex-1 h-10 my-auto">
-                <img class="h-full w-full object-contain object-left" src="./assets/logo.png" />
-            </div>
+        <!-- Navigation Menu -->
 
-            <div class="flex-1 flex md:border-2 md:rounded-full md:shadow-sm py-2">
-                <input class="flex-grow text-gray-600 placeholder:text-gray-400 outline-none pl-5 bg-transparent" type="text" placeholder="Start your search" />
-                <svg class="hidden md:block md:mx-2 h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-            </div>
+        <!-- Header Banner -->
 
-            <div class="flex-1 flex items-center justify-end space-x-4 text-gray-500">
-                <a class="hidden md:inline" href="#">Become a host</a>
+        <!-- Section: Explore Nearby -->
 
-                <svg class="h-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
+        <!-- Section: Live Anywhere -->
 
-                <div class="flex space-x-2 border-2 rounded-full p-2">
-                    <svg class="h-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                    <svg class="h-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
-                    </svg>
-                </div>
-            </div>
-        </nav>
+        <!-- Section: Greatest Outdoors -->
 
-        <header class="relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
-            <img class="w-full h-full object-cover" src="./assets/banner.png" />
-
-            <div class="absolute top-1/2 text-center w-full space-y-3">
-                <p class="text-sm sm:text-lg">Not sure where to go? Perfect.</p>
-
-                <button class="bg-white px-10 py-4 shadow-md rounded-full my-3 font-bold hover:shadow-xl active:scale-90 transition-all">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#6F019C] to-[#C6017E]"> I'm flexible </span>
-                </button>
-            </div>
-        </header>
-
-        <main class="max-w-7xl mx-auto p-8 sm:p-16 space-y-20">
-            <section class="space-y-5">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold">Explore Nearby</h2>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-                    <div class="flex items-center space-x-4 m-2 border border-gray-50 shadow-sm rounded-xl hover:bg-gray-100 cursor-pointer transform hover:scale-105 transition">
-                        <img class="w-16 h-16 rounded-tl-lg rounded-bl-lg" src="./assets/london.png" />
-
-                        <div>
-                            <h3>London</h3>
-                            <h4 class="text-gray-500">45-minute drive</h4>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4 m-2 border border-gray-50 shadow-sm rounded-xl hover:bg-gray-100 cursor-pointer transform hover:scale-105 transition">
-                        <img class="w-16 h-16 rounded-tl-lg rounded-bl-lg" src="./assets/manchester.png" />
-
-                        <div>
-                            <h3>Manchester</h3>
-                            <h4 class="text-gray-500">4.5-hour drive</h4>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4 m-2 border border-gray-50 shadow-sm rounded-xl hover:bg-gray-100 cursor-pointer transform hover:scale-105 transition">
-                        <img class="w-16 h-16 rounded-tl-lg rounded-bl-lg" src="./assets/liverpool.png" />
-
-                        <div>
-                            <h3>Liverpool</h3>
-                            <h4 class="text-gray-500">4.5-hour drive</h4>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4 m-2 border border-gray-50 shadow-sm rounded-xl hover:bg-gray-100 cursor-pointer transform hover:scale-105 transition">
-                        <img class="w-16 h-16 rounded-tl-lg rounded-bl-lg" src="./assets/york.png" />
-
-                        <div>
-                            <h3>York</h3>
-                            <h4 class="text-gray-500">4-hour drive</h4>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4 m-2 border border-gray-50 shadow-sm rounded-xl hover:bg-gray-100 cursor-pointer transform hover:scale-105 transition">
-                        <img class="w-16 h-16 rounded-tl-lg rounded-bl-lg" src="./assets/cardiff.png" />
-
-                        <div>
-                            <h3>Cardiff</h3>
-                            <h4 class="text-gray-500">45-minute drive</h4>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4 m-2 border border-gray-50 shadow-sm rounded-xl hover:bg-gray-100 cursor-pointer transform hover:scale-105 transition">
-                        <img class="w-16 h-16 rounded-tl-lg rounded-bl-lg" src="./assets/birkenhead.png" />
-
-                        <div>
-                            <h3>Birkenhead</h3>
-                            <h4 class="text-gray-500">4.5-hour drive</h4>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4 m-2 border border-gray-50 shadow-sm rounded-xl hover:bg-gray-100 cursor-pointer transform hover:scale-105 transition">
-                        <img class="w-16 h-16 rounded-tl-lg rounded-bl-lg" src="./assets/newquay.png" />
-
-                        <div>
-                            <h3>Newquay</h3>
-                            <h4 class="text-gray-500">6-hour drive</h4>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4 m-2 border border-gray-50 shadow-sm rounded-xl hover:bg-gray-100 cursor-pointer transform hover:scale-105 transition">
-                        <img class="w-16 h-16 rounded-tl-lg rounded-bl-lg" src="./assets/hove.png" />
-
-                        <div>
-                            <h3>Hove</h3>
-                            <h4 class="text-gray-500">2-hour drive</h4>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="space-y-5">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold">Live Anywhere</h2>
-
-                <div class="flex p-3 -ml-3 space-x-3 overflow-scroll scrollbar-hide">
-                    <div class="cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out space-y-3">
-                        <div class="h-80 w-80">
-                            <img class="rounded-lg" src="./assets/outdoor-getaways.png" />
-                        </div>
-
-                        <h3 class="text-2xl">Outdoor getaways</h3>
-                    </div>
-
-                    <div class="cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out space-y-3">
-                        <div class="h-80 w-80">
-                            <img class="rounded-lg" src="./assets/unique-stays.png" />
-                        </div>
-
-                        <h3 class="text-2xl">Unique stays</h3>
-                    </div>
-
-                    <div class="cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out space-y-3">
-                        <div class="h-80 w-80">
-                            <img class="rounded-lg" src="./assets/entire-homes.png" />
-                        </div>
-
-                        <h3 class="text-2xl">Entire homes</h3>
-                    </div>
-
-                    <div class="cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out space-y-3">
-                        <div class="h-80 w-80">
-                            <img class="rounded-lg" src="./assets/pet-allowed.png" />
-                        </div>
-
-                        <h3 class="text-2xl">Pet allowed</h3>
-                    </div>
-                </div>
-            </section>
-
-            <section class="relative cursor-pointer">
-                <div class="min-w-[300px] h-96">
-                    <img class="rounded-2xl h-full w-full object-cover" src="./assets/greatest-outdoors.png" />
-                </div>
-
-                <div class="absolute top-16 left-12 space-y-5">
-                    <h3 class="text-4xl w-64">The Greatest Outdoors</h3>
-
-                    <p>Wishlists curated by Airbnb.</p>
-
-                    <button class="text-sm bg-gray-900 text-white px-4 py-2 rounded-lg">Get Inspired</button>
-                </div>
-            </section>
-        </main>
-
-        <footer class="bg-gray-100">
-            <div class="max-w-7xl mx-auto px-8 py-14 md:px-32 grid grid-cols-2 md:grid-cols-4 gap-10">
-                <div class="text-gray-800 text-xs space-y-4">
-                    <h5 class="font-bold">ABOUT</h5>
-                    <p>How Airbnb works</p>
-                    <p>Newsroom</p>
-                    <p>Investors</p>
-                    <p>Airbnb Plus</p>
-                    <p>Airbnb Luxe</p>
-                </div>
-                <div class="space-y-4 text-xs text-gray-800">
-                    <h5 class="font-bold">COMMUNITY</h5>
-                    <p>Accessibility</p>
-                    <p>Diversity & Belonging</p>
-                    <p>Frontline Stays</p>
-                    <p>Guest Referrals</p>
-                    <p>Gift cards</p>
-                </div>
-                <div class="space-y-4 text-xs text-gray-800">
-                    <h5 class="font-bold">HOST</h5>
-                    <p>Host your home</p>
-                    <p>Host an Online Experience</p>
-                    <p>Responsible hosting</p>
-                    <p>Resource Center</p>
-                    <p>Community Center</p>
-                </div>
-                <div class="space-y-4 text-xs text-gray-800">
-                    <h5 class="font-bold">SUPPORT</h5>
-                    <p>Our COVID-19 Response</p>
-                    <p>Help Center</p>
-                    <p>Cancellation options</p>
-                    <p>Neighborhood Support</p>
-                    <p>Trust & Safety</p>
-                </div>
-            </div>
-        </footer>
+        <!-- Footer -->
     </body>
 </html>
